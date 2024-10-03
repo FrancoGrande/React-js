@@ -1,0 +1,48 @@
+
+export const products =[
+    {
+        id:"1",
+        title: "A15",
+        price: 123,
+        stock: 12,
+        descripcion: "descripcion del producto",
+        category: "Samsung",
+        img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828723/uvmve4kgemr0ynmuvvn0.png",
+    },
+    {
+        id:"2",
+        title: "blade 50v",
+        price: 113,
+        stock: 6,
+        descripcion: "descripcion del producto12",
+        category: "ZTE",
+        img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828730/w8pxmijoavvug9vcbn89.png",
+    },
+    {
+        id:"3",
+        title: "A3",
+        price: 122,
+        stock: 10,
+        descripcion: "descripcion del producto2",
+        category: "xiaomi",
+        img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828730/rcjzfszdkuzokavfzizp.png",
+    },
+    {
+        id:"4",
+        title: "A23",
+        price: 133,
+        stock: 3,
+        descripcion: "descripcion del producto3",
+        category: "Samsung",
+        img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828729/ehjsutofedrhdl4adib9.png",
+    },
+    {
+        id:"5",
+        title: "G24",
+        price: 133,
+        stock: 3,
+        descripcion: "descripcion del producto3",
+        category: "Motorola",
+        img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828732/anh23lemprbqqtkoevrs.png",
+    },
+];

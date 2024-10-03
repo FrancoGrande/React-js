@@ -1,21 +1,24 @@
 import CartWidget from '../../common/cartWidget/CartWidget'
 import "./navbar.css";
+import {categorias} from "./categorias";
+
+
+
 
 const Navbar = () => {
     return (
         <div>
-            <nav class="navbar">
-            <a class="navbar-brand" href="./index.html">Sam Sun</a>                         
+            <nav className="navbar">
+            <a className="navbar-brand" href="./index.html">Sam Sun</a>                         
                 <ul>
-                    <li>Samsung</li>
-                    <li>Motorola</li>
-                    <li>Xiaomi</li>
-                    <li>TCL</li>
+                {categorias.map((categoria) =>(
+                    <li key={categoria.title}>{categoria.title}</li>
+                ))};
                 </ul>
             <CartWidget />
         </nav>
         </div>
     )
-}
+} 
 
 export default Navbar
