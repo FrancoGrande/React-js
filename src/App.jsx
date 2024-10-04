@@ -1,4 +1,6 @@
+
 import Navbar from "./components/layouts/navbar/Navbar";
+import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
 import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer"
 import  {useState} from "react";
 
@@ -16,6 +18,9 @@ function App() {
       <Navbar />
       {montarComponente ? <ItemListContainer /> :null}
       <button onClick={montarYdesmontar}> montar/desmohntar</button>
+      {/* < CounterContainer /> */}
+
+      <ItemDetailContainer/>
     </div>
   )
       

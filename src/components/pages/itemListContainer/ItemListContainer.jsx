@@ -22,12 +22,8 @@ const ItemListContainer = () => {
     });
     
     getProducts
-    .then((response) =>{
-      console.log("mostrar productos", response)
-      setItems(response);
-    })
-    .catch((rej)=> {
-      console.log("error", rej)
+    .then((response) =>setItems(response))
+    .catch((rej)=> {console.log("error", rej)
     })
   }, [])
 
