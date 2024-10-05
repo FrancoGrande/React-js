@@ -1,6 +1,7 @@
 export const categorias = [
-    {title: "todas"},
-    {title: "motorola"},
-    {title: "xiaomi"},
-    {title: "samsung"},
-    {title: "ZTE"},]
+    {title: "todas", path:"/"},
+    {title: "motorola", path:"/category/motorola"},
+    {title: "xiaomi", path:"/category/xiaomi"},
+    {title: "samsung", path:"/category/samsung"},
+    {title: "tcl", path:"/category/tcl"},
+    {title: "zte", path:"/category/zte"},]

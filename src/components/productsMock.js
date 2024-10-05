@@ -6,7 +6,7 @@ export const products =[
         price: "299.999",
         stock: 12,
         descripcion: "descripcion del producto",
-        category: "Samsung",
+        category: "samsung",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828723/uvmve4kgemr0ynmuvvn0.png",
     },
     {
@@ -15,7 +15,7 @@ export const products =[
         price: "264.999",
         stock: 6,
         descripcion: "descripcion del producto2",
-        category: "ZTE",
+        category: "zte",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828730/w8pxmijoavvug9vcbn89.png",
     },
     {
@@ -33,7 +33,7 @@ export const products =[
         price: "699.999",
         stock: 3,
         descripcion: "descripcion del producto4",
-        category: "Samsung",
+        category: "samsung",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828729/ehjsutofedrhdl4adib9.png",
     },
     {
@@ -42,7 +42,7 @@ export const products =[
         price: "289.999",
         stock: 22,
         descripcion: "descripcion del producto5",
-        category: "Motorola",
+        category: "motorola",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828732/anh23lemprbqqtkoevrs.png",
     },
 
@@ -53,7 +53,7 @@ export const products =[
         price: "239.999",
         stock: 111,
         descripcion: "descripcion del producto6",
-        category: "TCL",
+        category: "tcl",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1728102620/jpbirf5zekeonh5p0a6g.png",
     },
     {
@@ -62,7 +62,7 @@ export const products =[
         price: "450.999",
         stock: 44,
         descripcion: "descripcion del producto7",
-        category: "TCL",
+        category: "tcl",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1728102621/xlxoftblclb1doerkxc1.png",
     },
     {
@@ -71,7 +71,7 @@ export const products =[
         price: "1.299.999",
         stock: 34,
         descripcion: "descripcion del producto8",
-        category: "Samsung",
+        category: "samsung",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1728102582/kdcqrpuri75idtno83eg.png",
     },
     {
@@ -80,7 +80,7 @@ export const products =[
         price: "145.00",
         stock: 24,
         descripcion: "descripcion del producto9",
-        category: "Samsung",
+        category: "tcl",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1728102620/hcrs8wq6czqw1kg8t3uv.png",
     },
     {
@@ -89,7 +89,7 @@ export const products =[
         price: "1.645.999",
         stock: 44,
         descripcion: "descripcion del producto10",
-        category: "Samsung",
+        category: "samsung",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1728103171/akwxa6fykjytdjar2qgy.png",
     },
 ];

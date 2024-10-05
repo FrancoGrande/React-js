@@ -1,9 +1,10 @@
 import * as React from 'react'
 import "./productCard.css"
 import {Card, Button, CardContent,Typography, CardActions ,CardMedia } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
-const ProductCard = ({title, price, descripcion, category, img}) => {
+const ProductCard = ({title, price, descripcion, category, img, id}) => {
     return (
     <Card className='card' sx={{ minWidth: 275 }}>
         <CardContent className='contenido'>
@@ -28,7 +29,9 @@ const ProductCard = ({title, price, descripcion, category, img}) => {
         </Typography>
         </CardContent>
         <CardActions>
+        <Link to= {`/productdetails/${id}`}>
         <Button className='botonVerDetalles' variant='contained' size="small">Ver detalles</Button>
+        </Link>
         </CardActions>
     </Card>
 

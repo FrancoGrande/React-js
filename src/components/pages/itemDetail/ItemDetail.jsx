@@ -7,15 +7,11 @@ import './ItemDetail.css'
 const ItemDetail = ({item}) => {
 return (
         <div className='Card'>
-            <CardMedia
-            component="img"
-            image={item.img}
-            alt="asd"
-            />
+            <img src={item.img} alt="" />
             <h2>{item.title}</h2>
             <h3>{item.descripcion}</h3>
             <h3>{item.price}</h3>
-            <CounterContainer />
+            {/* <CounterContainer /> */}
             <button variant='contained'>Comprar</button>
         </div>
     );
