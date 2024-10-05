@@ -10,8 +10,7 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
-p {
-  font-family: "Rubik", sans-serif;
-}
+

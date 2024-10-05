@@ -1,27 +1,32 @@
-
+import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Navbar from "./components/layouts/navbar/Navbar";
 import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
 import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer"
-import  {useState} from "react";
-
 
 function App() {
 
-  const [montarComponente, setMostrarComponente] = useState(false);
-  let saludo ="Hola mmmmmmmmmmmundo"
-  const montarYdesmontar = () =>{
-    setMostrarComponente(!montarComponente);
-  }
+  // const [montarComponente, setMostrarComponente] = useState(false);
+
+  // const montarYdesmontar = () =>{
+  //   setMostrarComponente(!montarComponente);
+  // }
+  return ( 
+        <BrowserRouter>
+    <Navbar  />
+      <Routes>
+      
+      {/* <Route path={"/"} element={<h2>una ruta</h2>}/> */}
+      <Route path={"/arrayProductos"} element={<ItemListContainer />}/>
+      <Route path={"/productdetails/:id"} element={<ItemDetailContainer />}/>
 
 
-  return ( <div>
-      <Navbar />
-      {montarComponente ? <ItemListContainer /> :null}
-      <button onClick={montarYdesmontar}> montar/desmohntar</button>
-      {/* < CounterContainer /> */}
 
-      <ItemDetailContainer/>
-    </div>
+
+
+
+      <Route path={"*"} element={<h2>404 not found</h2>}/>
+      </Routes>
+    </BrowserRouter>
   )
       
 }

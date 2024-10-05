@@ -1,15 +1,14 @@
 import React from 'react'
 import {CardMedia} from '@mui/material';
 import CounterContainer from '../../common/counter/CounterContainer';
-
+import './ItemDetail.css'
 
     // const {data,error,isLoading} =useFetch("url")
 const ItemDetail = ({item}) => {
 return (
-        <div>
+        <div className='Card'>
             <CardMedia
             component="img"
-            height="194"
             image={item.img}
             alt="asd"
             />
@@ -17,7 +16,7 @@ return (
             <h3>{item.descripcion}</h3>
             <h3>{item.price}</h3>
             <CounterContainer />
-            <button>Comprar</button>
+            <button variant='contained'>Comprar</button>
         </div>
     );
 };

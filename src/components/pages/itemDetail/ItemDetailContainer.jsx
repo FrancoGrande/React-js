@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
 import {products} from "../../productsMock";
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
     const [item,setItem] =useState({});
-    const id= "1";
+
+    const {id} =useParams()
 
 
     useEffect(()=> {

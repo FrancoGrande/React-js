@@ -5,11 +5,12 @@ import {Card, Button, CardContent,Typography, CardActions ,CardMedia } from '@mu
 
 const ProductCard = ({title, price, descripcion, category, img}) => {
     return (
-        <Card sx={{ minWidth: 275 }}>
-        <CardContent>
-        <CardMedia
+    <Card className='card' sx={{ minWidth: 275 }}>
+        <CardContent className='contenido'>
+        <CardMedia 
         component="img"
-        height="194"
+        height="300"
+
         image={img}
         alt="asd"
     />
@@ -27,7 +28,7 @@ const ProductCard = ({title, price, descripcion, category, img}) => {
         </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button className='botonVerDetalles' variant='contained' size="small">Ver detalles</Button>
         </CardActions>
     </Card>
 
