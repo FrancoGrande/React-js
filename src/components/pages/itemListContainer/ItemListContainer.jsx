@@ -38,6 +38,8 @@ const {categoryName} = useParams()
   });
  }, [categoryName])
 
+
+
   return <ItemList items={items} />;      // le decimos al componente hijo(ItemList) que mediante props le damos algo que se llama items y que le da un array de items
 }
 

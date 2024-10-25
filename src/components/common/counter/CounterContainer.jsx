@@ -1,25 +1,33 @@
 import React, { useState } from 'react';
 import Counter from './Counter';
 
-const CounterContainer = () => {
-const [count, setCount] = useState(0);
+
+const CounterContainer = ({onAdd, stock, totalItems}) => {
+const [count, setCount] = useState(totalItems);
 
 const sumar = () => {
-    setCount(count + 1);
+    if(count < stock){
+        setCount(count + 1);}
+        alert('stock maximo');
 };
 
     const restar = () => {
         if(count >0){
                 setCount(count - 1);
+                alert('no podes agregar menos de 1');
         }
     };
 
+    let childprops = {
+        count,
+        sumar,
+        restar,
 
+    }
     return (
         <Counter 
-        count={count} 
-        sumar={sumar} 
-        restar={restar} 
+        {...childprops}
+        onAdd={onAdd}
         />
     );
     };
