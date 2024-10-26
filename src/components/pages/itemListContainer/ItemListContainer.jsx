@@ -30,8 +30,9 @@ const {categoryName} = useParams()
 
   getProducts
   .then((response) =>{
-    setItems(response)
-    
+    setTimeout(() => {
+      setItems(response)
+    },1500)
   })
   .catch((error) =>{
     console.log("algo malo realmente sal", error);

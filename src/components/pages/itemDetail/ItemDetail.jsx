@@ -10,9 +10,9 @@ return (
             <img src={item.img} alt="" />
             <h2>{item.title}</h2>
             <h3>{item.descripcion}</h3>
-            <h3>{item.price}</h3>
+            <h3>${item.price}</h3>
             <CounterContainer onAdd={onAdd} stock= {item.stock} totalItems={totalItems}/>
-            <h3>Ya tenes: {totalItems} unidades del producto</h3>
+            <h3>Ya tenes: {totalItems} unidades en el carrito</h3>
         </div>
     );
 };

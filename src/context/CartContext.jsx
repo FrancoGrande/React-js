@@ -11,11 +11,11 @@ export const CartContextProvider = ({children}) => {
 
         if (itemExist) {
 
-            let newArray = cart.map((item) => {
-                if(item.id === product.id){
-                    return {...item, quantity: item.quantity}
+            let newArray = cart.map((elemento) => {
+                if(elemento.id === product.id){
+                    return {...elemento, quantity: product.quantity}
                 } else {
-                    return item
+                    return elemento
                 }
             })
             setCart(newArray)  
@@ -39,8 +39,8 @@ export const CartContextProvider = ({children}) => {
 
     const DeleteById =(id) => {
         
-        let arrayFiltrado = cart.filter((item) => item.id !== id);
-        setCart(arrayFiltrado)
+        let product =cart.find((elemento)=> elemento.id === id);
+        return product ? product.quantity : 1;
         
     }
 
@@ -57,7 +57,7 @@ export const CartContextProvider = ({children}) => {
         },0)
         return totalItems
     }
-    let data ={cart, addToCart, ClearCart, DeleteById , GetTotalAmount, GetTotalItems};
+    let data ={cart, addToCart, ClearCart, DeleteById , GetTotalAmount, GetTotalItems, getTotalQuantityById};
 
     return <CartContext.Provider value={data}>
         {children}

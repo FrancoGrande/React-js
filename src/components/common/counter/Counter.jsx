@@ -14,9 +14,6 @@ const Counter = ({ count, sumar, restar, onAdd }) => {
         >
             Agregar al carrito</button>
 
-
-
-
         <Button className='disminuir'variant='contained' onClick={restar}>Disminuir</Button>
         </div>
     );

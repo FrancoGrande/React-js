@@ -4,6 +4,12 @@ import "./itemList.css"
 
     const ItemList = ({items}) => {
 
+        if(items.length === 0){
+
+            return<h1>Cargando...</h1>
+
+        }
+
         return(<div className='cards'>
 
         {items.map((item)=>{

@@ -8,13 +8,13 @@ const [count, setCount] = useState(totalItems);
 const sumar = () => {
     if(count < stock){
         setCount(count + 1);}
-        alert('stock maximo');
+
 };
 
     const restar = () => {
         if(count >0){
                 setCount(count - 1);
-                alert('no podes agregar menos de 1');
+
         }
     };
 
