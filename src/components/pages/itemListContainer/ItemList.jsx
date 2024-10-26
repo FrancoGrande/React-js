@@ -4,17 +4,16 @@ import "./itemList.css"
 
     const ItemList = ({items}) => {
 
-        if(items.length === 0){
 
-            return<h1>Cargando...</h1>
-
-        }
 
         return(<div className='cards'>
 
-        {items.map((item)=>{
-            return (<ProductCard key={item.id} {...item}/>)
-        })}
+        {items.length > 0 ? items.map((item)=>{
+            return (<ProductCard key={item.id} {...item}/>
+
+            )
+        }) : <h1>cargando...</h1>
+        }
         </div>
     )
 }

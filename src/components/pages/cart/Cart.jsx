@@ -14,9 +14,18 @@ const Cart = ({cart, ClearCart, DeleteById ,total}) => {
           </div>
         )
       })}
-      <h3>Total: $ {total}</h3>
-      
-      <Button variant='contained'onClick={ClearCart} >Vaciar Carrito</Button>
+
+      {
+        total > 0 && (      <Button variant='contained'onClick={ClearCart}>
+          Vaciar Carrito
+        </Button>)
+      }
+
+
+      {total > 0 ? (
+        <h2>El total a pagar es: $ {total}</h2>):(<h2>El carrito esta vacio</h2>
+        )
+      }
 </div>
   )
 }

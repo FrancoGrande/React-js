@@ -32,7 +32,7 @@ const {categoryName} = useParams()
   .then((response) =>{
     setTimeout(() => {
       setItems(response)
-    },1500)
+    },500)
   })
   .catch((error) =>{
     console.log("algo malo realmente sal", error);
