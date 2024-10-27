@@ -3,7 +3,7 @@ export const products =[
     {
         id:"1",
         title: "A15",
-        price: "299.999",
+        price: "299999",
         stock: 6,
         descripcion: "descripcion del producto",
         category: "samsung",
@@ -12,7 +12,7 @@ export const products =[
     {
         id:"2",
         title: "blade 50v",
-        price: "264.999",
+        price: "264999",
         stock: 6,
         descripcion: "descripcion del producto2",
         category: "zte",
@@ -21,7 +21,7 @@ export const products =[
     {
         id:"3",
         title: "A3",
-        price: "294.999",
+        price: "294999",
         stock: 10,
         descripcion: "descripcion del producto3",
         category: "xiaomi",
@@ -30,7 +30,7 @@ export const products =[
     {
         id:"4",
         title: "A23",
-        price: "699.999",
+        price: "699999",
         stock: 3,
         descripcion: "descripcion del producto4",
         category: "samsung",
@@ -39,18 +39,18 @@ export const products =[
     {
         id:"5",
         title: "G24",
-        price: "289.999",
+        price: "289999",
         stock: 2,
         descripcion: "descripcion del producto5",
         category: "motorola",
         img: "https://res.cloudinary.com/dukvp5o4s/image/upload/v1727828732/anh23lemprbqqtkoevrs.png",
     },
 
-    /////////////////////////////
+
     {
         id:"6",
         title: "TCL 403",
-        price: "239.999",
+        price: "239999",
         stock: 1,
         descripcion: "descripcion del producto6",
         category: "tcl",
@@ -59,7 +59,7 @@ export const products =[
     {
         id:"7",
         title: "TCL 405",
-        price: "450.999",
+        price: "450999",
         stock: 4,
         descripcion: "descripcion del producto7",
         category: "tcl",
@@ -68,7 +68,7 @@ export const products =[
     {
         id:"8",
         title: "S23 FE",
-        price: "1.299.999",
+        price: "1299999",
         stock: 3,
         descripcion: "descripcion del producto8",
         category: "samsung",
@@ -77,7 +77,7 @@ export const products =[
     {
         id:"9",
         title: "TCL 408",
-        price: "145.00",
+        price: "145000",
         stock: 2,
         descripcion: "descripcion del producto9",
         category: "tcl",
@@ -86,7 +86,7 @@ export const products =[
     {
         id:"10",
         title: "Flip 5",
-        price: "1.645.999",
+        price: "1645999",
         stock: 4,
         descripcion: "descripcion del producto10",
         category: "samsung",

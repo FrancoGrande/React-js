@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import {products} from "../../productsMock";
 import ItemList from "./itemList";
 import './ItemList.css'
 import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import {db} from "../../../config-firebase";
 
 
 
@@ -14,34 +15,24 @@ const {categoryName} = useParams()
 
   useEffect(() => {
     
-    const productsFiltered = products.filter(
-      (product) => product.category === categoryName
-    );
-    
-    const getProducts =new Promise((res, rej) =>{
-    let existe= true;
-    if(existe) {
-      res(categoryName ? productsFiltered : products)
-  
-    } else{
-      rej({message: "algo malio sal"})
+    const itemCollection= collection(db, "productos")
+
+    let consulta =itemCollection;
+
+    if(categoryName){
+        consulta = query(itemCollection, where("category", '==', categoryName))
+    };
+
+    getDocs(itemCollection).then((Snapshot) => {
+        setItems(Snapshot.docs.map((doc) => ({ id: doc.id ,...doc.data()})));
     }
-  });
+    )
 
-  getProducts
-  .then((response) =>{
-    setTimeout(() => {
-      setItems(response)
-    },500)
-  })
-  .catch((error) =>{
-    console.log("algo malo realmente sal", error);
-  });
- }, [categoryName])
+}, [categoryName])
 
 
 
-  return <ItemList items={items} />;      // le decimos al componente hijo(ItemList) que mediante props le damos algo que se llama items y que le da un array de items
+  return <ItemList items={items} />; 
 }
 
 export default ItemListContainer;
