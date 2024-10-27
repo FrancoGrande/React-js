@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Button } from "@mui/material";
 import { CartContext } from "../../../context/CartContext";
 import { useContext } from "react";
+import {db} from "../../../config-firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 
 const Checkout = () => {
@@ -11,7 +13,8 @@ const Checkout = () => {
         phone: "",  
     });
 
-    const {cart, GetTotalAmount} = useContext(CartContext);
+    const {cart, GetTotalAmount, ClearCart} = useContext(CartContext);
+    const [orderId, setOrderId] = useState(null);
 
     const hanlesubmit = (e) => {
         e.preventDefault();
@@ -21,9 +24,16 @@ const Checkout = () => {
             buyer: user,
             items: cart,
             total,
-        }
-        console.log(order)
-    }
+        };
+
+            let refCollection = collection(db, "orders");
+            addDoc(refCollection, order).then((res) => {
+            setOrderId(res.id)
+            console.log(res.id);
+            ClearCart();
+            })
+
+    };
 
     const handleChange = (e) => {
         const {value, name} = e.target;
