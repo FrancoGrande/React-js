@@ -47,8 +47,11 @@ const Checkout = () => {
 
 return (
     <div>
-    <h1>Proceso de compra:</h1>
-    <form onSubmit={hanlesubmit}>
+
+        {
+            orderId ? <h1> Tu orden de compra es: {orderId}</h1> : 
+            <form onSubmit={hanlesubmit}>
+        <h1>Proceso de compra:</h1>
 
     <input 
     type="text" placeholder="Nombre"
@@ -72,6 +75,7 @@ return (
 
     <Button type="submit" variant="contained">Comprar</Button>
     </form>
+        }
     </div>
 )
 }
