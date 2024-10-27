@@ -19,6 +19,8 @@ const {categoryName} = useParams()
 
     let consulta =itemCollection;
 
+
+    
     if(categoryName){
         consulta = query(itemCollection, where("category", '==', categoryName))
     };

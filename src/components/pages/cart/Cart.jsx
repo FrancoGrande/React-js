@@ -1,4 +1,5 @@
 import { Button } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const Cart = ({cart, ClearCart, DeleteById ,total}) => {
   return (
@@ -16,16 +17,22 @@ const Cart = ({cart, ClearCart, DeleteById ,total}) => {
       })}
 
       {
-        total > 0 && (      <Button variant='contained'onClick={ClearCart}>
-          Vaciar Carrito
-        </Button>)
+        total > 0 && (      <Button variant='contained'onClick={ClearCart}>Vaciar Carrito</Button>)
       }
 
 
       {total > 0 ? (
+        <> 
         <h2>El total a pagar es: $ {total}</h2>):(<h2>El carrito esta vacio</h2>
+
+      <Link to="/checkout"><Button variant='contained'>Finalizar Compra</Button>
+      </Link>
+        </> 
+      ) : (
+        <h2>El carrito esta vacio</h2>
         )
-      }
+      } 
+
 </div>
   )
 }
