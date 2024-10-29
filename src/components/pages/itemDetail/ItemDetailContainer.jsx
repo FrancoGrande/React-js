@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
         let refDoc = doc(productscollection, id);
         let getProduct = getDoc(refDoc);
         getProduct.then((res) => setItem({...res.data(), id: res.id }));
-        console.log(item)
+
     }, [id]);
 
     const onAdd = (quantity) => {

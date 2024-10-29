@@ -8,6 +8,8 @@ import "./itemList.css"
 
         return(<div className='cards'>
 
+
+
         {items.length > 0 ? items.map((item)=>{
             return (<ProductCard key={item.id} {...item}/>
 

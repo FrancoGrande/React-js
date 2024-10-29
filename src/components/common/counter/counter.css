@@ -1,5 +1,31 @@
-.disminuir {
-    background-color: red;
+.contador{
+    padding: 20px;
 
 }
 
+.contador .agregar {
+    background-color: #711e86;
+    color: white;
+    margin-top: 150px;
+    display: block;
+}
+
+.contador .contadorNumero{
+
+    display: flex;
+    border: #711e86 2px solid;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: 40px;
+    width: 100px;
+}
+
+.contador .pad{
+    margin: 10px;
+}
+
+.contador .disminuir{
+    background-color: #ff0000;
+}

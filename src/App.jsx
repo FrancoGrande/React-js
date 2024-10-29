@@ -5,6 +5,9 @@ import ItemListContainer from "./components/pages/itemListContainer/ItemListCont
 import CartContainer from "./components/pages/cart/CartContainer";
 import { CartContextProvider } from "./context/CartContext";
 import Checkout from "./components/pages/checkout/Checkout";
+import './index.css'
+import Footer from "./components/layouts/footer/Footer";
+
 
 function App() {
 
@@ -14,10 +17,13 @@ function App() {
   //   setMostrarComponente(!montarComponente);
   // }
   return ( 
+
         <BrowserRouter>
     {/* ----------------------Context------------------------------------ */}
         <CartContextProvider>
+          
     <Navbar  />
+    
       <Routes>
       
 
@@ -40,6 +46,7 @@ function App() {
 
       </Routes>
         </CartContextProvider >
+      <Footer />
       {/* //----------------------------------------------------------------- */}
     </BrowserRouter>
   )

@@ -10,13 +10,21 @@
     display: flex;
 }
 
-.navbar ul li{
+.navbar ul {
+    
     list-style: none;
     padding: 30px;
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
 }
+
+.navbar ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem; /* Espaciado dentro del enlace */
+    transition: color 0.3s;
+  }
 
 .navbar .navbar-nav {
     color: #ffffff;

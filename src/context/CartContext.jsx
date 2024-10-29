@@ -42,8 +42,8 @@ export const CartContextProvider = ({children}) => {
     // delete by id
     const DeleteById =(id) => {
         
-        let product =cart.find((elemento)=> elemento.id === id);
-        return product ? product.quantity : 1;
+        let arrayFiltrado    =cart.filter((elemento)=> elemento.id !== id);
+        setCart(arrayFiltrado);
         
     }
     // total

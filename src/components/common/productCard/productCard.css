@@ -4,8 +4,27 @@
     
 }
 
-.card  .botonVerDetalles {
+.card h2 {
+    margin : 10px;
+}
+
+.card p {
+    margin: 10px;
+}
+
+.card-actions{
+    margin: 10px;
+}
+
+.card .card-actions .btn {
     background-color: #711e86;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .card img{

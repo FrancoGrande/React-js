@@ -4,17 +4,13 @@ import "./counter.css"
 
 const Counter = ({ count, sumar, restar, onAdd }) => {
     return (
-        <div>
-        <h1>{count}</h1>
-        <Button variant='contained' onClick={sumar}>Incrementar</Button>
+        <div className='contador' >
+        <Button className='disminuir pad 'variant='contained' onClick={restar}>-</Button>
+        <kbd className="kbd kbd-lg pad">{count}</kbd>
+        <Button variant='contained'className='pad' onClick={sumar}>+</Button>
 
-        <button variant='outlined' onClick={()=>{
-            onAdd(count);
-        }}
-        >
-            Agregar al carrito</button>
 
-        <Button className='disminuir'variant='contained' onClick={restar}>Disminuir</Button>
+        <Button variant='contained' className="agregar" onClick={()=>{onAdd(count);}}>Agregar al carrito</Button>
         </div>
     );
 };
