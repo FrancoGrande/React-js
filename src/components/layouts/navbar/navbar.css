@@ -24,7 +24,7 @@
     color: rgb(255, 255, 255);
     padding: 0.5rem 1rem; /* Espaciado dentro del enlace */
     transition: color 0.3s;
-  }
+}
 
 .navbar .navbar-nav {
     color: #ffffff;

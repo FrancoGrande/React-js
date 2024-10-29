@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import { CartContext } from "../../../context/CartContext";
 import { useContext } from "react";
 import {db} from "../../../config-firebase";
 import { collection, addDoc } from "firebase/firestore";
+import "./Checkout.css"
 
 
 const Checkout = () => {
@@ -46,34 +47,34 @@ const Checkout = () => {
     }
 
 return (
-    <div>
+    <div >
 
-        {
-            orderId ? <h1> Tu orden de compra es: {orderId}</h1> : 
-            <form onSubmit={hanlesubmit}>
-        <h1>Proceso de compra:</h1>
+    {
+    orderId ? <h1> Tu orden de compra es: {orderId}</h1> : 
+    <form  onSubmit={hanlesubmit}>
+    <h1>Proceso de compra:</h1>
+    <div className="inputDiv">
 
-    <input 
-    type="text" placeholder="Nombre"
+    <TextField id="outlined-basic" label="Nombre" variant="outlined"
     onChange={handleChange}
     name="name"
     />
 
-    <input 
+    <TextField id="outlined-basic" label="Email" variant="outlined" 
     type="text" 
-    placeholder="Email" 
     onChange={handleChange}
     name="email"
     />
 
-    <input 
+    <TextField id="outlined-basic" label="telefono" variant="outlined" 
     type="text" 
-    placeholder="telefono"
     onChange={handleChange}
     name="phone"
     />
-
-    <Button type="submit" variant="contained">Comprar</Button>
+    </div>
+    <div className="buttonComprar">
+        <Button type="submit" variant="contained">Comprar</Button>
+    </div>
     </form>
         }
     </div>

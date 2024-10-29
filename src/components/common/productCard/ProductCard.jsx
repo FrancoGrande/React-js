@@ -16,12 +16,13 @@ const ProductCard = ({title, price, descripcion, category, img, id}) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title font-bold">{title}</h2>
+                <p>{descripcion}</p>
                 <p>${price}</p>
 
                 <div className="card-actions justify-end">
 
                 <Link to= {`/productdetails/${id}`}>
-                <Button className="btn btn-primary">Ver detalles</Button>
+                <Button className="btn btn-primary" variant='contained'>Ver detalles</Button>
                 </Link>
 
                 

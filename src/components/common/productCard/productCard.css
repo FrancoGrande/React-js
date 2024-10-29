@@ -16,17 +16,6 @@
     margin: 10px;
 }
 
-.card .card-actions .btn {
-    background-color: #711e86;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .card img{
     height: 300px;
     width: 224px;
