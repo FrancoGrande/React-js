@@ -3,7 +3,7 @@ import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../../../context/CartContext';
 import { collection, doc, getDoc } from "firebase/firestore";
-import {db} from "../../../config-firebase";
+import { db } from "../../../../config-firebase";
 
 
 

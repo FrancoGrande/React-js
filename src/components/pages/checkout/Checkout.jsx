@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button, TextField } from "@mui/material";
 import { CartContext } from "../../../context/CartContext";
 import { useContext } from "react";
-import {db} from "../../../config-firebase";
+import { db } from "../../../../config-firebase";
 import { collection, addDoc } from "firebase/firestore";
 import "./Checkout.css"
 

@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCU9seylZ3oWgBjo2SevqkIoNAqhhRt8eU",
-  authDomain: "celu-tiendafake.firebaseapp.com",
-  projectId: "celu-tiendafake",
-  storageBucket: "celu-tiendafake.appspot.com",
-  messagingSenderId: "11138981964",
-  appId: "1:11138981964:web:7fb9736006e7f3358414e9"
+  apiKey:import.meta.env.VITE_API_KEY,
+  authDomain:import.meta.env.VITE_AUTH,
+  projectId:import.meta.env.VITE_PROJECT,
+  storageBucket:import.meta.env.VITE_STORAGE,
+  messagingSenderId:import.meta.env.VITE_MESSAGING,
+  appId:import.meta.env.VITE_APP_ID,
 };
 
 // Initialize Firebase
