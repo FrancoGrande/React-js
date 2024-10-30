@@ -36,7 +36,7 @@
     color: #ffffff;
 }
 .navbar .navbar-brand .imagen {
-    
+    margin-left: 10px;
     max-width: 50px;
 }
 .navbar .navbar-brand:hover {
@@ -46,3 +46,4 @@
 .navbar ul li{
     font-size: 30px;
 }
+

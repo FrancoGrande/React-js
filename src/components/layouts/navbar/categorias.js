@@ -1,3 +1,5 @@
+
+
 export const categorias = [
     {title: "todas", path:"/"},
     {title: "motorola", path:"/category/motorola"},

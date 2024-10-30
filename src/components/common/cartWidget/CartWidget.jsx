@@ -11,7 +11,7 @@ const CartWidget = () => {
 
   return (
     <div>
-      <Badge badgeContent={totalItems} color="primary" max={50} showZero={true}>
+      <Badge badgeContent={totalItems} color="primary" max={50} showZero={true} style={{color:"white", marginRight:"20px"}}>
         <ShoppingCartIcon />
       </Badge>
     </div>

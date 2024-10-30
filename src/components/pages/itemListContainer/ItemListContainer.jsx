@@ -25,7 +25,7 @@ const {categoryName} = useParams()
         consulta = query(itemCollection, where("category", '==', categoryName))
     };
 
-    getDocs(itemCollection).then((Snapshot) => {
+    getDocs(consulta).then((Snapshot) => {
         setItems(Snapshot.docs.map((doc) => ({ id: doc.id ,...doc.data()})));
     }
     )
